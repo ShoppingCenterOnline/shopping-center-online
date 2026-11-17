@@ -250,5 +250,40 @@ const PRODUCTS = [
     "price": 203.94,
     "category": "Snacks",
     "image": "assets/product-36.jpg"
-  }
+  },
+  {
+    "id": "37",
+    "name": "Nuvars Maracuya Habanero 12oz salsa Artesanal",
+    "price": 110,
+    "category": "Abarrotes",
+    "image": "assets/product-37.jpg"
+  },
+  {
+    "id": "38",
+    "name": "Nuvars Mango Habanero 12oz salsa Artesanal",
+    "price": 110,
+    "category": "Abarrotes",
+    "image": "assets/product-38.jpg"
+  },
+  {
+    "id": "39",
+    "name": "Nuvars Original Ranch 12oz salsa Artesanal",
+    "price": 110,
+    "category": "Abarrotes",
+    "image": "assets/product-39.jpg"
+  },
+  {
+    "id": "40",
+    "name": "Nuvars Smoked Ranch 12oz salsa Artesanal",
+    "price": 110,
+    "category": "Abarrotes",
+    "image": "assets/product-40.jpg"
+  },
+  {
+    "id": "41",
+    "name": "Nuvars Aderezo Chipotle 12oz salsa Artesanal",
+    "price": 110,
+    "category": "Abarrotes",
+    "image": "assets/product-41.jpg"
+  },
 ];
