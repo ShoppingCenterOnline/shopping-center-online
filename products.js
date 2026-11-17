@@ -249,6 +249,6 @@ const PRODUCTS = [
     "name": "Rica Sula Bolis Cereal de Maíz Horneado con sabor a Extra Queso 800 g",
     "price": 203.94,
     "category": "Snacks",
-    "image": null
+    "image": "assets/product-36.jpg"
   }
 ];
