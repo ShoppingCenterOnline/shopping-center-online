@@ -1,91 +1,17 @@
 <!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Shopping Center Online | Catálogo para revendedores</title>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shopping Center Online | Catálogo</title>
 <style>
-:root{--bg:#0b1020;--panel:#141d33;--cyan:#28e6e6;--pink:#ff4fa3;--yellow:#ffe45c;--txt:#f5f7ff;--muted:#aeb8cf}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:16px system-ui,Arial,sans-serif}
-header{padding:18px;background:linear-gradient(120deg,#080b16,#17152b);border-bottom:2px solid var(--cyan)}
-.wrap{max-width:1100px;margin:auto;padding:0 16px}.brand{display:flex;align-items:center;gap:18px}.brand-logo{width:118px;height:118px;object-fit:contain;flex:0 0 auto}.brand-copy h1{margin:0;font-size:clamp(23px,4vw,36px)}.brand-copy .sub{color:var(--muted);margin:7px 0 0}
-.notice{margin:18px 0;padding:13px;border:1px solid #33415f;border-radius:12px;color:var(--muted);background:#10182b}
-.tools{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.tools input,.tools select{background:var(--panel);color:white;border:1px solid #394767;padding:12px;border-radius:10px;flex:1;min-width:180px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
-.card{background:var(--panel);border:1px solid #293653;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:10px}
-.pic{height:125px;border-radius:12px;background:linear-gradient(135deg,#202c49,#171d31);display:grid;place-items:center;color:var(--cyan);font-size:38px}
-.tag{font-size:12px;color:var(--yellow);text-transform:uppercase;letter-spacing:.08em}.muted{color:var(--muted);font-size:14px}.price{font-size:23px;font-weight:800;color:var(--cyan)}
-button{border:0;border-radius:10px;padding:11px 14px;font-weight:700;cursor:pointer;background:var(--pink);color:#160d1a}
-button.secondary{background:#293653;color:white}.qty{display:flex;align-items:center;gap:10px}.qty button{padding:7px 12px}
-.cart{margin:24px 0;background:var(--panel);border:1px solid #34415e;border-radius:16px;padding:18px}.line{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid #303d59}.total{font-size:24px;font-weight:800;color:var(--yellow);text-align:right;margin:15px 0}
-.form{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}.form input,.form select,.form textarea{width:100%;padding:12px;border-radius:9px;border:1px solid #394767;background:#0e1629;color:white}
-footer{padding:30px 0;color:var(--muted);font-size:13px}
-@media(max-width:500px){.line{font-size:14px}}
-</style></head>
-<body>
+:root{--bg:#0b1020;--panel:#141d33;--cyan:#28e6e6;--pink:#ff4fa3;--yellow:#ffe45c;--txt:#f5f7ff;--muted:#aeb8cf}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:16px system-ui,Arial,sans-serif}header{padding:18px;background:linear-gradient(120deg,#080b16,#17152b);border-bottom:2px solid var(--cyan)}.wrap{max-width:1100px;margin:auto;padding:0 16px}.brand{display:flex;align-items:center;gap:18px}.brand-logo{width:118px;height:118px;object-fit:contain}.brand-copy h1{margin:0;font-size:clamp(23px,4vw,36px)}.sub{color:var(--muted);margin:7px 0 0}.notice{margin:18px 0;padding:13px;border:1px solid #33415f;border-radius:12px;color:var(--muted);background:#10182b}.tools{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.tools input,.tools select{background:var(--panel);color:white;border:1px solid #394767;padding:12px;border-radius:10px;flex:1;min-width:180px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}.card{background:var(--panel);border:1px solid #293653;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:10px}.pic{height:175px;border-radius:12px;background:#fff;display:grid;place-items:center;overflow:hidden}.pic img{width:100%;height:100%;object-fit:contain}.pic .noimg{color:#536078;font-size:13px}.tag{font-size:12px;color:var(--yellow);text-transform:uppercase;letter-spacing:.08em}.muted{color:var(--muted);font-size:14px}.price{font-size:23px;font-weight:800;color:var(--cyan)}button{border:0;border-radius:10px;padding:11px 14px;font-weight:700;cursor:pointer;background:var(--pink);color:#160d1a}button.secondary{background:#293653;color:white}.qty{display:flex;align-items:center;gap:10px}.qty button{padding:7px 12px}.cart{margin:24px 0;background:var(--panel);border:1px solid #34415e;border-radius:16px;padding:18px}.line{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid #303d59}.total{font-size:24px;font-weight:800;color:var(--yellow);text-align:right;margin:15px 0}footer{padding:30px 0;color:var(--muted);font-size:13px}@media(max-width:500px){.line{font-size:14px}.brand-logo{width:84px;height:84px}}
+</style></head><body>
 <header><div class="wrap brand"><img class="brand-logo" src="assets/logo-shopping-center.png" alt="Logo Shopping Center Online"><div class="brand-copy"><h1>Catálogo para revendedores</h1><p class="sub">Honduras · Pedidos fáciles por WhatsApp</p></div></div></header>
-<main class="wrap">
-<div class="notice">Productos seleccionados para tu negocio. Haz tu pedido fácilmente por WhatsApp. Entregas programadas en Talanga, Cedros y Valle de Siria. Sin mínimo de compra durante el lanzamiento.</div>
-<div class="tools"><input id="search" placeholder="Buscar productos…"><select id="category"><option value="">Todas las categorías</option></select></div>
-<section id="catalog" class="grid"></section>
-<section class="cart"><h2>Tu pedido</h2><div id="items" class="muted">Aún no agregas productos.</div><div class="total" id="total">Total: L0.00</div>
-<h3>Finalizar pedido</h3>
-<p class="muted">No necesitas escribir tu nombre, teléfono, dirección ni registrarte. Al enviar el pedido, WhatsApp te identificará por el número desde el que nos escribas. Coordinaremos contigo la zona y dirección de entrega directamente en la conversación.</p>
-<p class="muted">Pago contra entrega. Entregas programadas en Talanga, Cedros y Valle de Siria. El total es referencial y se confirma disponibilidad y precio final al recibir el pedido.</p>
-<button id="send">Enviar pedido por WhatsApp</button>
-</section>
-</main>
+<main class="wrap"><div class="notice">Productos seleccionados para tu negocio. Haz tu pedido fácilmente por WhatsApp. Entregas programadas. Sin mínimo de compra durante el lanzamiento.</div>
+<div class="tools"><input id="search" placeholder="Buscar productos…" aria-label="Buscar productos"><select id="category"><option value="">Todas las categorías</option></select></div><section id="catalog" class="grid"></section>
+<section class="cart"><h2>Tu pedido</h2><div id="items" class="muted">Aún no agregas productos.</div><div class="total" id="total">Total: L0.00</div><p class="muted">No necesitas registrarte ni llenar formularios. Al enviar tu pedido, coordinaremos contigo los detalles directamente por WhatsApp.</p><button id="send">Enviar pedido por WhatsApp</button></section></main>
 <footer><div class="wrap">Shopping Center Online · Honduras · WhatsApp: +504 8943-5015<br>Comercialización independiente; no somos PriceSmart ni estamos afiliados oficialmente.</div></footer>
 <script src="products.js"></script><script>
-const WA="50489435015", cart={};
-const money=n=>"L"+n.toFixed(2);
-const price=p=>Math.round(p.cost*1.15*100)/100;
-const categories=[...new Set(PRODUCTS.map(p=>p.category))];
-const cat=document.getElementById('category');categories.forEach(c=>{let o=document.createElement('option');o.value=c;o.textContent=c;cat.append(o)});
-function render(){let q=document.getElementById('search').value.toLowerCase(),c=cat.value;
-let list=PRODUCTS.filter(p=>(p.name+" "+p.detail).toLowerCase().includes(q)&&(!c||p.category===c));
-document.getElementById('catalog').innerHTML=list.map(p=>`<article class="card"><div class="pic">＋</div><div class="tag">${p.category} · SKU ${p.id}</div><h3>${p.name}</h3><div class="muted">${p.detail}</div><div class="price">${money(price(p))}</div><button onclick="add('${p.id}')">Agregar al pedido</button></article>`).join('')||'<p class="muted">No encontramos productos con esa búsqueda.</p>';
-renderCart()}
-function add(id){cart[id]=(cart[id]||0)+1;renderCart()}
-function change(id,d){cart[id]=(cart[id]||0)+d;if(cart[id]<=0)delete cart[id];renderCart()}
-function renderCart(){let selected=PRODUCTS.filter(p=>cart[p.id]);document.getElementById('items').innerHTML=selected.length?selected.map(p=>`<div class="line"><span>${p.name}<br><small>${money(price(p))} c/u</small></span><span class="qty"><button class="secondary" onclick="change('${p.id}',-1)">−</button>${cart[p.id]}<button class="secondary" onclick="change('${p.id}',1)">+</button></span><b>${money(price(p)*cart[p.id])}</b></div>`).join(''):'Aún no agregas productos.';
-let total=selected.reduce((s,p)=>s+price(p)*cart[p.id],0);document.getElementById('total').textContent='Total: '+money(total)}
-document.getElementById('search').addEventListener('input',render);cat.addEventListener('change',render);
-
-// Recuerda los datos del cliente en su propio navegador.
-const CUSTOMER_KEY = "sco_customer_v1";
-const customerFields = ["name","phone","area","address"];
-function loadCustomer(){
-  try {
-    const saved = JSON.parse(localStorage.getItem(CUSTOMER_KEY) || "{}");
-    customerFields.forEach(id => {
-      const el = document.getElementById(id);
-      if (el && saved[id]) el.value = saved[id];
-    });
-  } catch(e) {}
-}
-function saveCustomer(){
-  const saved = {};
-  customerFields.forEach(id => {
-    const el = document.getElementById(id);
-    if (el) saved[id] = el.value.trim();
-  });
-  try { localStorage.setItem(CUSTOMER_KEY, JSON.stringify(saved)); } catch(e) {}
-}
-customerFields.forEach(id => {
-  const el = document.getElementById(id);
-  if (el) {
-    el.addEventListener("change", saveCustomer);
-    el.addEventListener("blur", saveCustomer);
-  }
-});
-loadCustomer();
-
-document.getElementById('send').onclick=()=>{
-let selected=PRODUCTS.filter(p=>cart[p.id]);
-if(!selected.length)return alert('Agrega al menos un producto.');
-let total=selected.reduce((s,p)=>s+price(p)*cart[p.id],0);
-let msg=`PEDIDO SHOPPING CENTER ONLINE\n\n${selected.map(p=>`${cart[p.id]} x ${p.name} — ${money(price(p)*cart[p.id])}`).join('\n')}\n\nTOTAL REFERENCIAL: ${money(total)}\nPago contra entrega.\nPor favor, confirmar disponibilidad y precio final. Coordinar zona y dirección de entrega por este chat.`;
-window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`,'_blank')
-}
-render();
+const WA="50489435015",cart={};const money=n=>"L"+Number(n).toFixed(2);const categories=[...new Set(PRODUCTS.map(p=>p.category))];const cat=document.getElementById('category');categories.forEach(c=>{let o=document.createElement('option');o.value=c;o.textContent=c;cat.append(o)});
+function render(){let q=document.getElementById('search').value.toLowerCase(),c=cat.value;let list=PRODUCTS.filter(p=>(p.name).toLowerCase().includes(q)&&(!c||p.category===c));document.getElementById('catalog').innerHTML=list.map(p=>`<article class="card"><div class="pic">${p.image?`<img src="${p.image}" alt="${p.name}" loading="lazy">`:'<span class="noimg">Fotografía pendiente</span>'}</div><div class="tag">${p.category}</div><h3>${p.name}</h3><div class="price">${money(p.price)}</div><button onclick="add('${p.id}')">Agregar al pedido</button></article>`).join('')||'<p class="muted">No encontramos productos con esa búsqueda.</p>';renderCart()}
+function add(id){cart[id]=(cart[id]||0)+1;renderCart()}function change(id,d){cart[id]=(cart[id]||0)+d;if(cart[id]<=0)delete cart[id];renderCart()}
+function renderCart(){let selected=PRODUCTS.filter(p=>cart[p.id]);document.getElementById('items').innerHTML=selected.length?selected.map(p=>`<div class="line"><span>${p.name}<br><small>${money(p.price)} c/u</small></span><span class="qty"><button class="secondary" onclick="change('${p.id}',-1)">−</button>${cart[p.id]}<button class="secondary" onclick="change('${p.id}',1)">+</button></span><b>${money(p.price*cart[p.id])}</b></div>`).join(''):'Aún no agregas productos.';let total=selected.reduce((s,p)=>s+p.price*cart[p.id],0);document.getElementById('total').textContent='Total: '+money(total)}
+document.getElementById('search').addEventListener('input',render);cat.addEventListener('change',render);document.getElementById('send').onclick=()=>{let selected=PRODUCTS.filter(p=>cart[p.id]);if(!selected.length)return alert('Agrega al menos un producto.');let total=selected.reduce((s,p)=>s+p.price*cart[p.id],0);let msg=`PEDIDO SHOPPING CENTER ONLINE\n\n${selected.map(p=>`${cart[p.id]} x ${p.name} — ${money(p.price*cart[p.id])}`).join('\n')}\n\nTOTAL: ${money(total)}\nPor favor, confirmar y coordinar la entrega por este chat.`;window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`,'_blank')};render();
 </script></body></html>
