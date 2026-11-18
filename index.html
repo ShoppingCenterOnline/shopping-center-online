@@ -10,12 +10,166 @@
 .product-qty{width:100%;justify-content:space-between;background:#202c47;border:1px solid #394767;border-radius:10px;padding:3px 6px}
 .product-qty button{min-width:40px}
 .product-qty strong{font-size:18px;min-width:28px;text-align:center;color:var(--txt)}
+/* SHOPPING CENTER ONLINE DIGITAL */
+.digital-section {
+  margin: 35px 0;
+  padding: 35px 22px;
+  border: 1px solid #28e6e6;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #10182b, #19132d);
+  box-shadow: 0 0 22px rgba(40,230,230,.12);
+}
+
+.digital-section .digital-label {
+  color: #28e6e6;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.digital-section h2 {
+  font-size: clamp(27px, 5vw, 42px);
+  margin: 12px 0;
+}
+
+.digital-section h2 span {
+  color: #28e6e6;
+}
+
+.digital-description {
+  color: #aeb8cf;
+  line-height: 1.7;
+  max-width: 650px;
+}
+
+.digital-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
+  gap: 13px;
+  margin: 25px 0;
+}
+
+.digital-card {
+  background: #202c47;
+  border: 1px solid #394767;
+  padding: 18px;
+  border-radius: 13px;
+}
+
+.digital-card h3 {
+  color: #28e6e6;
+  margin: 0 0 8px;
+}
+
+.digital-card p {
+  color: #aeb8cf;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.digital-cta {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(90deg,#28e6e6,#ff4fa3);
+  color: #101020;
+  padding: 14px 23px;
+  border-radius: 30px;
+  font-weight: 800;
+  margin-top: 12px;
+}
+
+.digital-cta:hover {
+  box-shadow: 0 0 18px #28e6e6;
+}
+
+@media(max-width:500px) {
+  .digital-section {
+    padding: 24px 16px;
+  }
+}
 </style></head><body>
 <header><div class="wrap brand"><img class="brand-logo" src="assets/logo-shopping-center.png" alt="Logo Shopping Center Online"><div class="brand-copy"><h1>Catálogo para revendedores</h1><p class="sub">Honduras · Pedidos fáciles por WhatsApp</p></div></div></header>
 <main class="wrap"><div class="notice">Productos seleccionados para tu negocio. Haz tu pedido fácilmente por WhatsApp. Entregas programadas. Sin mínimo de compra durante el lanzamiento.</div>
 <div class="tools"><input id="search" placeholder="Buscar productos…" aria-label="Buscar productos"><select id="category"><option value="">Todas las categorías</option></select></div><section id="catalog" class="grid"></section>
 <section class="cart"><h2>Tu pedido</h2><div id="items" class="muted">Aún no agregas productos.</div><div class="total" id="total">Total: L0.00</div><p class="muted">No necesitas registrarte ni llenar formularios. Al enviar tu pedido, coordinaremos contigo los detalles directamente por WhatsApp.</p><button id="send">Enviar pedido por WhatsApp</button></section></main>
-<footer><div class="wrap">Shopping Center Online · Honduras · WhatsApp: +504 8943-5015<br>Comercialización independiente; no somos PriceSmart ni estamos afiliados oficialmente.</div></footer>
+<section class="wrap digital-section">
+  <div class="digital-label">
+    SHOPPING CENTER ONLINE DIGITAL
+  </div>
+
+  <h2>
+    Lleva tu negocio al mundo
+    <span>digital.</span>
+  </h2>
+
+  <p class="digital-description">
+    Impulsamos tu negocio con soluciones digitales.
+    Creamos y administramos páginas web, catálogos
+    digitales y tiendas virtuales para emprendedores
+    y empresas.
+  </p>
+
+  <div class="digital-grid">
+
+    <article class="digital-card">
+      <h3>🌐 Páginas empresariales</h3>
+      <p>
+        Presencia profesional para presentar tu empresa,
+        servicios y medios de contacto.
+      </p>
+    </article>
+
+    <article class="digital-card">
+      <h3>📱 Catálogos digitales</h3>
+      <p>
+        Presenta tus productos y facilita que tus
+        clientes conozcan tu oferta.
+      </p>
+    </article>
+
+    <article class="digital-card">
+      <h3>🛒 Tiendas virtuales</h3>
+      <p>
+        Lleva tus productos al comercio electrónico
+        con una tienda digital.
+      </p>
+    </article>
+
+    <article class="digital-card">
+      <h3>⚙️ Administración</h3>
+      <p>
+        Administración, mantenimiento y actualización
+        de plataformas digitales.
+      </p>
+    </article>
+
+    <article class="digital-card">
+      <h3>🎧 Soporte personalizado</h3>
+      <p>
+        Acompañamiento y asistencia para tus
+        soluciones digitales.
+      </p>
+    </article>
+
+  </div>
+
+  <h3>¿Quieres llevar tu negocio al mundo digital?</h3>
+
+  <p class="digital-description">
+    Solicita información y una cotización
+    para tu proyecto.
+  </p>
+
+  <a class="digital-cta"
+     href="https://wa.me/50489435015?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Shopping%20Center%20Online%20Digital."
+     target="_blank"
+     rel="noopener">
+    Solicitar cotización por WhatsApp
+  </a>
+</section>
+ </main>
+  <footer><div class="wrap">Shopping Center Online · Honduras · WhatsApp: +504 8943-5015<br>Comercialización independiente; no somos PriceSmart ni estamos afiliados oficialmente.</div></footer>
 <script src="products.js"></script><script>
 const WA="50489435015",cart={};const money=n=>"L"+Number(n).toFixed(2);const categories=[...new Set(PRODUCTS.map(p=>p.category))];const cat=document.getElementById('category');categories.forEach(c=>{let o=document.createElement('option');o.value=c;o.textContent=c;cat.append(o)});
 function render(){
